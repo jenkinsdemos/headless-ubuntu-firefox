@@ -17,15 +17,15 @@ public class SampleSelTest {
 		@Test
 	public void TestMethod() {
 		 //Launch firefox browser 
-			System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
-			//driver = new FirefoxDriver();  
+			System.setProperty("webdriver.gecko.driver", "/Usr/local/bin/geckodriver");
+			driver = new FirefoxDriver();  
 			//driver.get("https://google.com");
-			FirefoxBinary firefoxBinary = new FirefoxBinary();
-			firefoxBinary.addCommandLineOptions("--headless");
-			firefoxBinary.addCommandLineOptions("--no-sandbox");
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.setBinary(firefoxBinary);
-			FirefoxDriver driver = new FirefoxDriver(firefoxOptions);
+			//FirefoxBinary firefoxBinary = new FirefoxBinary();
+			//firefoxBinary.addCommandLineOptions("--headless");
+			//firefoxBinary.addCommandLineOptions("--no-sandbox");
+			//FirefoxOptions firefoxOptions = new FirefoxOptions();
+			//firefoxOptions.setBinary(firefoxBinary);
+			//FirefoxDriver driver = new FirefoxDriver(firefoxOptions);
 			 
 			driver.get("https://google.com");
 			 if (driver.getPageSource().contains("nothiing")) {
